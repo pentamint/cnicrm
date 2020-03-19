@@ -4,7 +4,7 @@ from django.db import migrations
 
 def create_data(apps, schema_editor):
     Customer = apps.get_model('customers', 'Customer')
-    Customer(first_name="Customer 001", last_name="Customer 001", email="customer001@email.com", phone="00000000", address="Customer 000 Address", description= "Customer 001 description").save()
+    Customer(first_name="Customer 001", last_name="Customer 001", full_name="Customer 001", email="customer001@email.com", phone="00000000", address="Customer 000 Address", description= "Customer 001 description").save()
 
 class Migration(migrations.Migration):
     dependencies = [

@@ -18,7 +18,7 @@ def customers_list(request):
         previousPage = 1
         customers = Customer.objects.all()
         page = request.GET.get('page', 1)
-        paginator = Paginator(customers, 5)
+        paginator = Paginator(customers, 20)
         try:
             data = paginator.page(page)
         except PageNotAnInteger:

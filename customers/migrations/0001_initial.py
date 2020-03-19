@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('first_name', models.CharField(max_length=255, verbose_name='First name')),
                 ('last_name', models.CharField(max_length=255, verbose_name='Last name')),
+                ('full_name', models.CharField(max_length=255, verbose_name='Full name')),
                 ('email', models.EmailField(max_length=254)),
                 ('phone', models.CharField(max_length=20)),
                 ('address', models.TextField(blank=True, null=True)),

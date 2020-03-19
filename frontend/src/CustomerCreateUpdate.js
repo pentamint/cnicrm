@@ -78,31 +78,31 @@ class CustomerCreateUpdate extends Component {
           <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>
-              First Name:</label>
+              이름:</label>
               <input className="form-control" type="text" ref='firstName' />
 
             <label>
-              Last Name:</label>
+              성:</label>
               <input className="form-control" type="text" ref='lastName'/>
 
             <label>
-              Phone:</label>
+              전화번호:</label>
               <input className="form-control" type="text" ref='phone' />
 
             <label>
-              Email:</label>
+              이메일:</label>
               <input className="form-control" type="text" ref='email' />
 
             <label>
-              Address:</label>
+              주소:</label>
               <input className="form-control" type="text" ref='address' />
 
             <label>
-              Description:</label>
+              비고:</label>
               <textarea className="form-control" ref='description' ></textarea>
 
 
-            <input className="btn btn-primary" type="submit" value="Submit" />
+            <input className="btn btn-primary" type="submit" value="등록하기" />
             </div>
           </form>
         );

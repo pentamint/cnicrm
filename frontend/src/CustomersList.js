@@ -48,21 +48,19 @@ render() {
             <thead  key="thead">
             <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Description</th>
-                <th>Actions</th>
+                <th>고객명</th>
+                <th>전화번호</th>
+                <th>이메일</th>
+                <th>주소</th>
+                <th>비고</th>
+                <th>옵션</th>
             </tr>
             </thead>
             <tbody>
             {this.state.customers.map( c  =>
                 <tr  key={c.pk}>
                 <td>{c.pk}  </td>
-                <td>{c.first_name}</td>
-                <td>{c.last_name}</td>
+                <td>{c.last_name} {c.first_name}</td>
                 <td>{c.phone}</td>
                 <td>{c.email}</td>
                 <td>{c.address}</td>
